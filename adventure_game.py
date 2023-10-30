@@ -28,14 +28,16 @@ while True:
                 print("Invalid choice. Please choose 'left' or 'right'.")
                 continue
 
+        if answer == "right":
+            break
+
         answer = input("You see a plane and a car. Which one are you taking? (plane/car): ").lower()
         if answer == "plane":
             print("Unfortunately, you do not know how to fly... Game over!")
         elif answer == "car":
             print("Good job! Fortunately, the car started and had enough fuel for you to go home! You win!")
         else:
-            print("Invalid choice. Please choose 'plane' or 'car'.")
-            continue
+            print("Invalid choice. Please choose 'plane' or 'car.")
 
     elif answer == "no":
         print("See you later.")
